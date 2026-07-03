@@ -8,12 +8,11 @@ This repository contains backend development projects completed during my traini
 
 ## Repository Structure
 
-| Branch | Description |
-|--------|-------------|
-| **main** | Repository Overview |
+| Branch                            | Description                              |
+| --------------------------------- | ---------------------------------------- |
+| **main**                          | Repository Overview                      |
 | **Greeting_Servlet_Application1** | Greeting Web Application (Without Login) |
-| **Greeting_Servlet_Application2** | Greeting Web Application (With Login) |
-| **Employee_Payroll_Application1** | Employee Payroll Management System |
+| **Greeting_Servlet_Application2** | Greeting Web Application (With Login)    |
 
 ---
 
@@ -24,11 +23,12 @@ This repository contains backend development projects completed during my traini
 A Java Servlet-based Greeting Web Application that generates personalized greeting messages without requiring user authentication.
 
 **Features**
-- Greeting Form
-- User Input Handling
-- Dynamic Greeting Generation
-- JSP & Servlet Integration
-- MVC Architecture
+
+* Greeting Form
+* User Input Handling
+* Dynamic Greeting Generation
+* JSP & Servlet Integration
+* MVC Architecture
 
 ---
 
@@ -37,56 +37,34 @@ A Java Servlet-based Greeting Web Application that generates personalized greeti
 A Java Servlet-based Greeting Web Application with user authentication, authorization, Spring Framework integration, JDBC, and PostgreSQL database connectivity.
 
 **Features**
-- User Registration
-- User Login
-- Session Management
-- Password Hashing
-- Spring JDBC Integration
-- PostgreSQL Database
-- Greeting Management
-- Role-Based Authentication
 
----
-
-### 📌 Employee Payroll Application1
-
-A complete Employee Payroll Management System developed using **Jakarta Servlet, JSP, Spring JDBC, and PostgreSQL**. The application provides secure authentication, employee management, payroll management, department management, and role-based access.
-
-**Features**
-- User Registration
-- Secure Login & Logout
-- Password Hashing
-- Session Management
-- Role-Based Access Control (Admin/User)
-- Add Employee
-- Edit Employee
-- Delete Employee
-- Employee Profile Images
-- Department Management
-- Payroll Management
-- Payroll Audit Logs
-- Spring JDBC Integration
-- PostgreSQL Database
-- MVC Architecture
+* User Registration
+* User Login
+* Session Management
+* Password Hashing
+* Spring JDBC Integration
+* PostgreSQL Database
+* Greeting Management
+* Role-Based Authentication
 
 ---
 
 ## Technologies Used
 
-- Java
-- Servlets
-- JSP
-- JSTL
-- Spring Framework
-- Spring JDBC
-- JDBC
-- PostgreSQL
-- Maven
-- Apache Tomcat
-- HTML5
-- CSS3
-- Git
-- GitHub
+* Java
+* Servlets
+* JSP
+* JSTL
+* Spring Framework
+* Spring JDBC
+* JDBC
+* PostgreSQL
+* Maven
+* Apache Tomcat
+* HTML5
+* CSS3
+* Git
+* GitHub
 
 ---
 
@@ -103,11 +81,8 @@ BridgeLabz_backend_Training
 ├── Greeting_Servlet_Application1
 │   └── Greeting Web Application (Without Login)
 │
-├── Greeting_Servlet_Application2
-│   └── Greeting Web Application (With Login)
-│
-└── Employee_Payroll_Application1
-    └── Employee Payroll Management System
+└── Greeting_Servlet_Application2
+    └── Greeting Web Application (With Login)
 ```
 
 ---
@@ -134,33 +109,26 @@ git checkout Greeting_Servlet_Application1
 git checkout Greeting_Servlet_Application2
 ```
 
-### Employee Payroll Application1
-
-```bash
-git checkout Employee_Payroll_Application1
-```
-
 ---
 
 ## Learning Outcomes
 
 During this training, I gained hands-on experience in:
 
-- Java Programming
-- Object-Oriented Programming (OOP)
-- Servlets & JSP
-- Spring Framework
-- Spring JDBC
-- JDBC
-- PostgreSQL Database
-- MVC Architecture
-- Authentication & Authorization
-- Session Management
-- Employee Payroll System Development
-- CRUD Operations
-- Database Design
-- Git & GitHub Version Control
-- Maven Project Management
+* Java Programming
+* Object-Oriented Programming (OOP)
+* Servlets & JSP
+* Spring Framework
+* Spring JDBC
+* JDBC
+* PostgreSQL Database
+* MVC Architecture
+* Authentication & Authorization
+* Session Management
+* CRUD Operations
+* Database Design
+* Git & GitHub Version Control
+* Maven Project Management
 
 ---
 
@@ -168,23 +136,23 @@ During this training, I gained hands-on experience in:
 
 ### Arpit Gupta
 
-**Bachelor of Technology (B.Tech)**  
-**Computer Science & Engineering (CSE)**  
+**Bachelor of Technology (B.Tech)**
+**Computer Science & Engineering (CSE)**
 **GLA University, Mathura**
 
 ### Skills
 
-- Java
-- Spring Framework
-- Spring JDBC
-- JDBC
-- PostgreSQL
-- Servlets
-- JSP
-- HTML
-- CSS
-- Git
-- GitHub
+* Java
+* Spring Framework
+* Spring JDBC
+* JDBC
+* PostgreSQL
+* Servlets
+* JSP
+* HTML
+* CSS
+* Git
+* GitHub
 
 ---
 
