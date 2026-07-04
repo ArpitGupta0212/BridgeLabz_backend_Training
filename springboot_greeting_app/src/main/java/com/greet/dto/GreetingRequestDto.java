@@ -1,18 +1,16 @@
 package com.greet.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class GreetingRequestDto {
 
     private String message;
 
-    public GreetingRequestDto() {
-    }
-
-    public GreetingRequestDto(String message) {
-        this.message = message;
-    }
-
-    public String getMessage() {
-        return message;
-    }
 }

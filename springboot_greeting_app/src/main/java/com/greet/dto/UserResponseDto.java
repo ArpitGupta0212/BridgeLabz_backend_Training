@@ -1,7 +1,13 @@
 package com.greet.dto;
 
 import com.greet.model.Role;
+import lombok.*;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class UserResponseDto {
 
     private Long id;
@@ -9,29 +15,4 @@ public class UserResponseDto {
     private String email;
     private Role role;
 
-    public UserResponseDto() {
-    }
-
-    public UserResponseDto(Long id, String username, String email, Role role) {
-        this.id = id;
-        this.username = username;
-        this.email = email;
-        this.role = role;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public Role getRole() {
-        return role;
-    }
 }
