@@ -31,17 +31,21 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean register(User user) {  //
+    public boolean register(User user) {
 
-        User existingUser =
-                userRepository.findByUsername(user.getUsername());//
+        User existingUser = userRepository.findByUsername(user.getUsername());
 
         if (existingUser != null) {
             return false;
         }
 
+        // Check if an ADMIN already exists
+        if ("ADMIN".equalsIgnoreCase(user.getRole()) && userRepository.adminExists()) {
+            throw new RuntimeException("Admin already exists. Please register as a User.");
+        }
+
         user.setPassword(HashUtil.hashPassword(user.getPassword()));
 
-        return userRepository.save(user);   //details
+        return userRepository.save(user);
     }
 }

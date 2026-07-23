@@ -7,5 +7,6 @@ public interface UserRepository {
     User findByUsername(String username);
 
     boolean save(User user);
+    boolean adminExists();
 
 }

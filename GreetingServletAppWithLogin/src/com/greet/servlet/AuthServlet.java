@@ -100,18 +100,28 @@ public class AuthServlet extends HttpServlet {
             newUser.setEmail(request.getParameter("email"));
             newUser.setRole(request.getParameter("role"));
 
-            if (userService.register(newUser)) {  //
+            try {
 
-                request.setAttribute("success",
-                        "Registration successful. Please log in.");
+                if (userService.register(newUser)) {
 
-                request.getRequestDispatcher("/WEB-INF/views/login.jsp")
-                        .forward(request, response);
+                    request.setAttribute("success",
+                            "Registration successful. Please log in.");
 
-            } else {
+                    request.getRequestDispatcher("/WEB-INF/views/login.jsp")
+                            .forward(request, response);
 
-                request.setAttribute("error",
-                        "Username is already taken");
+                } else {
+
+                    request.setAttribute("error",
+                            "Username is already taken");
+
+                    request.getRequestDispatcher("/WEB-INF/views/register.jsp")
+                            .forward(request, response);
+                }
+
+            } catch (RuntimeException e) {
+
+                request.setAttribute("error", e.getMessage());
 
                 request.getRequestDispatcher("/WEB-INF/views/register.jsp")
                         .forward(request, response);

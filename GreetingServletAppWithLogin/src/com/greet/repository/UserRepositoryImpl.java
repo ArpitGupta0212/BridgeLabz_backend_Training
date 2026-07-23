@@ -56,4 +56,13 @@ public class UserRepositoryImpl implements UserRepository {
 
         return rows > 0;
     }
+    @Override
+    public boolean adminExists() {
+
+        String sql = "SELECT COUNT(*) FROM users WHERE role = ?";
+
+        Integer count = jdbcTemplate.queryForObject(sql, Integer.class, "ADMIN");
+
+        return count != null && count > 0;
+    }
 }

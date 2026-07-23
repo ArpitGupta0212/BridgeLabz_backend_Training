@@ -161,7 +161,7 @@
 
             <select name="role">
                 <option value="USER">
-                    User (Read-only / View dashboard)
+                    User (View dashboard)
                 </option>
 
                 <option value="ADMIN">
